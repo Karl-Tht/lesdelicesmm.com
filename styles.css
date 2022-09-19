@@ -1,7 +1,12 @@
-*{
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+
 
 @media only screen and (max-width: 960px) {
   .sm-icons .nav-item {
@@ -11,23 +16,23 @@
 
 /*NAVBAR******************************************/
 
-.background-cover{
-  background-image:url(./BG/BG1.jpg);
-  background-size:cover;
-  background-position:center;
+.background-cover {
+  background-image: url(./BG/BG1.jpg);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height:auto;
+  height: auto;
 
 }
 
 .navbar .navbar-nav .nav-link {
   color: #000000;
- 
+
 }
 
 .nav-link:hover {
 
-  background:#E7D6F9;
+  background: #E7D6F9;
   color: black;
   border-radius: 5px;
   transition: all 0.5s ease 0s;
@@ -84,47 +89,130 @@ header .overlay {
 
 /*Produits Effect******************************************/
 
-.card:hover{
-  border-color:black;
+.card:hover {
+  border-color: black;
 
-  box-shadow: 0 0 10px 5px rgba(255, 182, 193,.6);
+  box-shadow: 0 0 10px 5px rgba(255, 182, 193, .6);
   background-position: left;
   transform: scale(1.1);
   transition: all linear 200ms;
   z-index: 1;
-  box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
   cursor: pointer;
   color: black;
 }
 
-.card-title{
+.card-title {
   color: #ED4545;
 }
 
-.avis{
-  color:rgb(177,104,96) ;
+.avis {
+  color: rgb(177, 104, 96);
 }
 
-.card{
+.card {
   margin: 1em;
-  transition:box-shadow .5s, border-color 1s;
+  transition: box-shadow .5s, border-color 1s;
   border: 0;
   border-radius: 0;
   color: black;
-  box-shadow: 5px 5px 10px rgba(216, 112, 147,.6);
+  box-shadow: 5px 5px 10px rgba(216, 112, 147, .6);
   padding: 0em 0;
   border-bottom-right-radius: 4em;
   border-top-left-radius: 4em;
-  background: linear-gradient(to left,#e5e7b9 50%, #ddf3c2 50% );
+  background: linear-gradient(to left, #e5e7b9 50%, #ddf3c2 50%);
   background-size: 200%;
   background-position: right;
   transition: background-position 0.5s ease-out;
   width: 400px;
   height: auto;
 }
-.container{
+
+.container {
   padding-top: 5em;
 }
 
 /*******************************************/
+.bg-slider{
+  background-color: rgb(255, 223, 211);
+}
 
+
+.slider {
+  display: flex;
+  max-width: 1150px;
+  place-items: center;
+  text-align: center;
+  display: grid;
+  height: 100%;
+  background-color: rgb(255, 223, 211);
+}
+
+image {
+  width: 450px;
+  height: auto;
+}
+
+.slider .cc {
+  background: #fff;
+  flex: 1;
+  margin: 0 12px;
+  border-radius: 12px;
+  box-shadow: 5px 10px 12px #2a2a2a11;
+}
+
+.slider .cc .image {
+  height: 200px;
+  width: 100%;
+}
+
+.slider .cc .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.slider .cc .content {
+  padding: 10px 20px;
+}
+
+.cc .content .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ED4545;
+  line-height: 22px;
+}
+
+.cc .content .sub-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cc .content p {
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.cc .content .btn {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.cc .content .btn button {
+  background-color: rgb(177, 104, 96);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cc .content .btn button:hover {
+  transform: scale(0.9);
+}

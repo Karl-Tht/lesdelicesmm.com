@@ -7,13 +7,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
-@media only screen and (max-width: 960px) {
-  .sm-icons .nav-item {
-    padding-right: 1em;
-  }
-}
-
 /*NAVBAR******************************************/
 
 .background-cover {
